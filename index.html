@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controller Pro | User Manual</title>
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --bg-dark: #0f171e;
+            --panel: #1a2228;
+            --text-main: #ffffff;
+            --text-dim: #8c9ca8;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 { color: var(--primary); }
+        h1 { text-align: center; font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: var(--text-dim); margin-bottom: 50px; }
+        
+        /* Language Grid for Setup Cards */
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin-bottom: 60px;
+        }
+        .lang-card {
+            background: var(--panel);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .lang-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        /* Manual Steps */
+        .step {
+            background: var(--panel);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .step img {
+            width: 100%;
+            max-width: 350px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Controller Pro</h1>
+    <div class="subtitle">Quick Start Guide & User Manual</div>
+
+    <!-- QUICK START / SETUP CARDS -->
+    <h2>1. Quick Start Setup Cards</h2>
+    <p style="color: var(--text-dim); margin-bottom: 20px;">Select your language to view the hardware setup instructions for your Controller Pro node.</p>
+    
+    <div class="language-grid">
+        <a href="assets/setup-en.jpg" target="_blank" class="lang-card">🇬🇧 English</a>
+        <a href="assets/setup-de.jpg" target="_blank" class="lang-card">🇩🇪 Deutsch</a>
+        <a href="assets/setup-fr.jpg" target="_blank" class="lang-card">🇫🇷 Français</a>
+        <a href="assets/setup-es.jpg" target="_blank" class="lang-card">🇪🇸 Español</a>
+        <a href="assets/setup-it.jpg" target="_blank" class="lang-card">🇮🇹 Italiano</a>
+        <a href="assets/setup-pt.jpg" target="_blank" class="lang-card">🇵🇹 Português</a>
+        <a href="assets/setup-tl.jpg" target="_blank" class="lang-card">🇵🇭 Tagalog</a>
+        <a href="assets/setup-zh.jpg" target="_blank" class="lang-card">🇨🇳 中文</a>
+        <a href="assets/setup-ja.jpg" target="_blank" class="lang-card">🇯🇵 日本語</a>
+        <a href="assets/setup-ar.jpg" target="_blank" class="lang-card">🇸🇦 العربية</a>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 50px;">
+
+    <!-- MASTER MANUAL -->
+    <h2>2. App User Manual</h2>
+
+    <div class="step">
+        <h3>Step 1: The Welcome Screen</h3>
+        <p>When you first launch the app, ensure your phone is connected to the same Wi-Fi network as your Bose SoundTouch speakers. You must grant the local network permissions for the app to function.</p>
+        <img src="assets/shot1-welcome.jpg" alt="Welcome Screen">
+    </div>
+
+    <div class="step">
+        <h3>Step 2: The Network Scanner</h3>
+        <p>The app will automatically sweep your network to find your speakers and bind them to the Controller Pro node.</p>
+        <img src="assets/shot2-scanner.jpg" alt="Network Scanner">
+    </div>
+
+    <div class="step">
+        <h3>Step 3: Main Dashboard & Presets</h3>
+        <p>Your core command center. Access your 6 hardware presets and your unlimited local app presets right from the home screen.</p>
+        <img src="assets/shot3-dashboard.jpg" alt="Main Dashboard">
+    </div>
+
+    <div class="step">
+        <h3>Step 4: TuneIn Radio Search</h3>
+        <p>Search global internet radio stations natively. Tap the '+' icon to save a station directly to a preset.</p>
+        <img src="assets/shot4-tunein.jpg" alt="TuneIn Search">
+    </div>
+
+    <div class="step">
+        <h3>Step 5: Spotify Connect</h3>
+        <p>Use the Spotify modal to instantly resume your last session without leaving the Controller Pro app.</p>
+        <img src="assets/shot5-spotify.jpg" alt="Spotify Modal">
+    </div>
+
+    <div class="step">
+        <h3>Step 6: NAS & Local Media</h3>
+        <p>Tap the 'Add' button to seamlessly inject your local network drives or DLNA servers into the app for physical remote playback.</p>
+        <img src="assets/shot6-nas.jpg" alt="NAS Library">
+    </div>
+
+    <div class="step">
+        <h3>Step 7: Recently Played</h3>
+        <p>Quickly jump back into your favorite streams and media using the Recents view.</p>
+        <img src="assets/shot7-recents.jpg" alt="Recents View">
+    </div>
+
+    <div class="step">
+        <h3>Step 8: Surround Sound Desk</h3>
+        <p>If you are using a compatible Soundbar, calibrate your center channel, rear surrounds, and bass module directly from the desk.</p>
+        <img src="assets/shot8-surround.jpg" alt="Surround Sound Desk">
+    </div>
+
+</div>
+
+</body>
+</html>
