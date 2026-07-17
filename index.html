@@ -32,8 +32,8 @@
         /* Language Grid for Setup Cards */
         .language-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
             margin-bottom: 60px;
         }
         .lang-card {
@@ -42,14 +42,41 @@
             border-radius: 12px;
             padding: 15px;
             text-align: center;
-            text-decoration: none;
             color: white;
             font-weight: bold;
-            transition: 0.2s;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
         .lang-card:hover {
+            border-color: rgba(0, 212, 255, 0.4);
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1);
+        }
+        .lang-title {
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+        }
+        .card-links {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .card-links a {
+            background: rgba(255,255,255,0.05);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.2s;
+        }
+        .card-links a:hover {
+            background: var(--primary);
+            color: #000;
             border-color: var(--primary);
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
             transform: translateY(-2px);
         }
 
@@ -79,19 +106,118 @@
 
     <!-- QUICK START / SETUP CARDS -->
     <h2>1. Quick Start Setup Cards</h2>
-    <p style="color: var(--text-dim); margin-bottom: 20px;">Select your language to view the hardware setup instructions for your Controller Pro node.</p>
+    <p style="color: var(--text-dim); margin-bottom: 20px;">Select your language and follow steps 1 through 4 to set up your Controller Pro node.</p>
     
     <div class="language-grid">
-        <a href="assets/setup-en.jpg" target="_blank" class="lang-card">🇬🇧 English</a>
-        <a href="assets/setup-de.jpg" target="_blank" class="lang-card">🇩🇪 Deutsch</a>
-        <a href="assets/setup-fr.jpg" target="_blank" class="lang-card">🇫🇷 Français</a>
-        <a href="assets/setup-es.jpg" target="_blank" class="lang-card">🇪🇸 Español</a>
-        <a href="assets/setup-it.jpg" target="_blank" class="lang-card">🇮🇹 Italiano</a>
-        <a href="assets/setup-pt.jpg" target="_blank" class="lang-card">🇵🇹 Português</a>
-        <a href="assets/setup-tl.jpg" target="_blank" class="lang-card">🇵🇭 Tagalog</a>
-        <a href="assets/setup-zh.jpg" target="_blank" class="lang-card">🇨🇳 中文</a>
-        <a href="assets/setup-ja.jpg" target="_blank" class="lang-card">🇯🇵 日本語</a>
-        <a href="assets/setup-ar.jpg" target="_blank" class="lang-card">🇸🇦 العربية</a>
+        <!-- English -->
+        <div class="lang-card">
+            <div class="lang-title">🇬🇧 English</div>
+            <div class="card-links">
+                <a href="assets/setup-en-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-en-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-en-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-en-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- Deutsch -->
+        <div class="lang-card">
+            <div class="lang-title">🇩🇪 Deutsch</div>
+            <div class="card-links">
+                <a href="assets/setup-de-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-de-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-de-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-de-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- Français -->
+        <div class="lang-card">
+            <div class="lang-title">🇫🇷 Français</div>
+            <div class="card-links">
+                <a href="assets/setup-fr-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-fr-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-fr-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-fr-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- Español -->
+        <div class="lang-card">
+            <div class="lang-title">🇪🇸 Español</div>
+            <div class="card-links">
+                <a href="assets/setup-es-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-es-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-es-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-es-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- Italiano -->
+        <div class="lang-card">
+            <div class="lang-title">🇮🇹 Italiano</div>
+            <div class="card-links">
+                <a href="assets/setup-it-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-it-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-it-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-it-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- Português -->
+        <div class="lang-card">
+            <div class="lang-title">🇵🇹 Português</div>
+            <div class="card-links">
+                <a href="assets/setup-pt-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-pt-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-pt-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-pt-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- Tagalog -->
+        <div class="lang-card">
+            <div class="lang-title">🇵🇭 Tagalog</div>
+            <div class="card-links">
+                <a href="assets/setup-tl-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-tl-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-tl-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-tl-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- 中文 -->
+        <div class="lang-card">
+            <div class="lang-title">🇨🇳 中文</div>
+            <div class="card-links">
+                <a href="assets/setup-zh-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-zh-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-zh-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-zh-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- 日本語 -->
+        <div class="lang-card">
+            <div class="lang-title">🇯🇵 日本語</div>
+            <div class="card-links">
+                <a href="assets/setup-ja-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-ja-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-ja-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-ja-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
+
+        <!-- العربية -->
+        <div class="lang-card">
+            <div class="lang-title">🇸🇦 العربية</div>
+            <div class="card-links">
+                <a href="assets/setup-ar-1.jpg" target="_blank">1</a>
+                <a href="assets/setup-ar-2.jpg" target="_blank">2</a>
+                <a href="assets/setup-ar-3.jpg" target="_blank">3</a>
+                <a href="assets/setup-ar-4.jpg" target="_blank">4</a>
+            </div>
+        </div>
     </div>
 
     <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 50px;">
